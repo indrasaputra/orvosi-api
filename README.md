@@ -1,10 +1,10 @@
 # api
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/orvosi/api)](https://goreportcard.com/report/github.com/orvosi/api)
-[![Workflow](https://github.com/orvosi/api/workflows/Test/badge.svg)](https://github.com/orvosi/api/actions)
+[![Go Report Card](https://goreportcard.com/badge/github.com/indrasaputra/orvosi-api)](https://goreportcard.com/report/github.com/indrasaputra/orvosi-api)
+[![Workflow](https://github.com/indrasaputra/orvosi-api/workflows/Test/badge.svg)](https://github.com/indrasaputra/orvosi-api/actions)
 [![codecov](https://codecov.io/gh/orvosi/api/branch/master/graph/badge.svg?token=WA9A65NFR9)](https://codecov.io/gh/orvosi/api)
 [![Maintainability](https://api.codeclimate.com/v1/badges/3fa0f93762298b7ae7bc/maintainability)](https://codeclimate.com/github/orvosi/api/maintainability)
-[![Go Reference](https://pkg.go.dev/badge/github.com/orvosi/api.svg)](https://pkg.go.dev/github.com/orvosi/api)
+[![Go Reference](https://pkg.go.dev/badge/github.com/indrasaputra/orvosi-api.svg)](https://pkg.go.dev/github.com/indrasaputra/orvosi-api)
 
 ## Description
 
@@ -42,7 +42,7 @@ API provides HTTP REST API for Orvosi application.
 
 - Go to project folder
 
-    Usually, it would be `cd go/src/github.com/orvosi/api`.
+    Usually, it would be `cd go/src/github.com/indrasaputra/orvosi-api`.
 
 - Run the database
 
@@ -114,15 +114,15 @@ API provides HTTP REST API for Orvosi application.
 
 ## Request Flows
 
-See [Request Flows](https://github.com/orvosi/api/blob/master/doc/REQUEST-FLOWS.md)
+See [Request Flows](https://github.com/indrasaputra/orvosi-api/blob/master/doc/REQUEST-FLOWS.md)
 
 ## Endpoints
 
-See [Endpoints](https://github.com/orvosi/api/blob/master/doc/ENDPOINTS.md)
+See [Endpoints](https://github.com/indrasaputra/orvosi-api/blob/master/doc/ENDPOINTS.md)
 
 ## Code Map
 
-See [Code Map](https://github.com/orvosi/api/blob/master/doc/CODE-MAP.md)
+See [Code Map](https://github.com/indrasaputra/orvosi-api/blob/master/doc/CODE-MAP.md)
 
 ## Dependencies
 
