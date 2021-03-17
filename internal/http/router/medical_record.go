@@ -3,9 +3,9 @@ package router
 import (
 	"net/http"
 
-	"github.com/labstack/echo/v4"
 	"github.com/indrasaputra/orvosi-api/internal/http/handler"
 	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
+	"github.com/labstack/echo/v4"
 )
 
 // MedicalRecordCreator creates routes for medical record creator.
