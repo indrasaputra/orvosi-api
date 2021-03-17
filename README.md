@@ -1,4 +1,4 @@
-# api
+# Orvosi API
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/indrasaputra/orvosi-api)](https://goreportcard.com/report/github.com/indrasaputra/orvosi-api)
 [![Workflow](https://github.com/indrasaputra/orvosi-api/workflows/Test/badge.svg)](https://github.com/indrasaputra/orvosi-api/actions)
@@ -8,7 +8,9 @@
 
 ## Description
 
-API provides HTTP REST API for Orvosi application.
+Orvosi API provides HTTP REST API for Orvosi application.
+This project was previously placed in [https://github.com/orvosi/api](https://github.com/orvosi/api) which I own.
+Then, I decided to move this repository to my personal github.
 
 ## SLI and SLO
 
@@ -22,7 +24,7 @@ API provides HTTP REST API for Orvosi application.
 
 ## Architecture Diagram
 
-![orvosi-api](https://user-images.githubusercontent.com/4661221/106680454-43908300-65f1-11eb-9f60-c92e900d99f9.png)
+![orvosi-arch](https://user-images.githubusercontent.com/4661221/111404137-d5b39d00-8700-11eb-866e-3c45a5ae5cec.png)
 
 ## Owner
 
