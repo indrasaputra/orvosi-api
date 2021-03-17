@@ -3,9 +3,9 @@ package builder_test
 import (
 	"testing"
 
-	_ "github.com/lib/pq"
 	"github.com/indrasaputra/orvosi-api/internal/builder"
 	"github.com/indrasaputra/orvosi-api/internal/config"
+	_ "github.com/lib/pq"
 	"github.com/stretchr/testify/assert"
 )
 

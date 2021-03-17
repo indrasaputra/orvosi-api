@@ -1,9 +1,9 @@
 package server
 
 import (
+	"github.com/indrasaputra/orvosi-api/internal/http/router"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/indrasaputra/orvosi-api/internal/http/router"
 )
 
 // Server acts as echo.Echo server.

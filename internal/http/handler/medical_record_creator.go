@@ -4,11 +4,11 @@ import (
 	"context"
 	"net/http"
 
-	"github.com/labstack/echo/v4"
 	"github.com/indrasaputra/orvosi-api/entity"
 	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
 	"github.com/indrasaputra/orvosi-api/internal/http/response"
 	"github.com/indrasaputra/orvosi-api/usecase"
+	"github.com/labstack/echo/v4"
 )
 
 // CreateMedicalRecordRequest represents medical record request.

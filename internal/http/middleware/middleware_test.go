@@ -5,9 +5,9 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/labstack/echo/v4"
 	"github.com/indrasaputra/orvosi-api/entity"
 	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
+	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
 )
 
