@@ -111,7 +111,7 @@ func TestMedicalRecordFinder_FindByEmail(t *testing.T) {
 	t.Run("successfully find medical records bounded to specific email", func(t *testing.T) {
 		exec := createMedicalRecordFinderExecutor(ctrl)
 
-		exec.repo.EXPECT().FindByEmail(context.Background(), "dummy@dummy.com", uint64(0), uint(10)).Return([]*entity.MedicalRecord{&entity.MedicalRecord{}}, nil)
+		exec.repo.EXPECT().FindByEmail(context.Background(), "dummy@dummy.com", uint64(0), uint(10)).Return([]*entity.MedicalRecord{{}}, nil)
 		res, err := exec.usecase.FindByEmail(context.Background(), "dummy@dummy.com", 0)
 
 		assert.Nil(t, err)

@@ -47,18 +47,18 @@ func TestNewSuccess(t *testing.T) {
 func TestNewError(t *testing.T) {
 	t.Run("successfully create an instance of error response", func(t *testing.T) {
 		errors := [][]*Error{
-			[]*Error{
-				&Error{
+			{
+				{
 					Message: "message from error detail #1",
 					Code:    "01-404",
 				},
 			},
-			[]*Error{
-				&Error{
+			{
+				{
 					Message: "message from error detail #2",
 					Code:    "02-504",
 				},
-				&Error{
+				{
 					Message: "message from error detail #3",
 					Code:    "03-503",
 				},
