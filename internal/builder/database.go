@@ -4,7 +4,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/orvosi/api/internal/config"
+	"github.com/indrasaputra/orvosi-api/internal/config"
 )
 
 // BuildSQLDatabase builds *sql.DB from given config.

@@ -6,7 +6,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/orvosi/api/entity"
+	"github.com/indrasaputra/orvosi-api/entity"
 )
 
 const defaultLimit = 10

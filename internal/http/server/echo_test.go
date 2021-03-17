@@ -4,12 +4,12 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/orvosi/api/internal/http/handler"
-	"github.com/orvosi/api/internal/http/middleware"
-	"github.com/orvosi/api/internal/http/router"
-	"github.com/orvosi/api/internal/http/server"
-	"github.com/orvosi/api/internal/tool"
-	mock_usecase "github.com/orvosi/api/test/mock/usecase"
+	"github.com/indrasaputra/orvosi-api/internal/http/handler"
+	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
+	"github.com/indrasaputra/orvosi-api/internal/http/router"
+	"github.com/indrasaputra/orvosi-api/internal/http/server"
+	"github.com/indrasaputra/orvosi-api/internal/tool"
+	mock_usecase "github.com/indrasaputra/orvosi-api/test/mock/usecase"
 	"github.com/stretchr/testify/assert"
 )
 

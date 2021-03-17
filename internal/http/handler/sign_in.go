@@ -4,9 +4,9 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/orvosi/api/entity"
-	"github.com/orvosi/api/internal/http/response"
-	"github.com/orvosi/api/usecase"
+	"github.com/indrasaputra/orvosi-api/entity"
+	"github.com/indrasaputra/orvosi-api/internal/http/response"
+	"github.com/indrasaputra/orvosi-api/usecase"
 )
 
 // Signer handles HTTP request and response

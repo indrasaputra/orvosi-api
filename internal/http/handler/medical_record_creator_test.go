@@ -12,10 +12,10 @@ import (
 	"github.com/golang/mock/gomock"
 	"github.com/indrasaputra/hashids"
 	"github.com/labstack/echo/v4"
-	"github.com/orvosi/api/entity"
-	"github.com/orvosi/api/internal/http/handler"
-	"github.com/orvosi/api/internal/http/middleware"
-	mock_usecase "github.com/orvosi/api/test/mock/usecase"
+	"github.com/indrasaputra/orvosi-api/entity"
+	"github.com/indrasaputra/orvosi-api/internal/http/handler"
+	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
+	mock_usecase "github.com/indrasaputra/orvosi-api/test/mock/usecase"
 	"github.com/stretchr/testify/assert"
 )
 

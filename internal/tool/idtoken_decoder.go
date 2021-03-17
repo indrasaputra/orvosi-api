@@ -3,7 +3,7 @@ package tool
 import (
 	"context"
 
-	"github.com/orvosi/api/entity"
+	"github.com/indrasaputra/orvosi-api/entity"
 	"google.golang.org/api/idtoken"
 )
 

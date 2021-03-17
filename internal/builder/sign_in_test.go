@@ -4,8 +4,8 @@ import (
 	"database/sql"
 	"testing"
 
-	"github.com/orvosi/api/internal/builder"
-	"github.com/orvosi/api/internal/config"
+	"github.com/indrasaputra/orvosi-api/internal/builder"
+	"github.com/indrasaputra/orvosi-api/internal/config"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/DATA-DOG/go-sqlmock"
-	"github.com/orvosi/api/entity"
-	"github.com/orvosi/api/internal/repository"
+	"github.com/indrasaputra/orvosi-api/entity"
+	"github.com/indrasaputra/orvosi-api/internal/repository"
 	"github.com/stretchr/testify/assert"
 )
 

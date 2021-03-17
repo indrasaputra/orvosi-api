@@ -6,8 +6,8 @@ import (
 	"testing"
 
 	"github.com/labstack/echo/v4"
-	"github.com/orvosi/api/entity"
-	"github.com/orvosi/api/internal/http/middleware"
+	"github.com/indrasaputra/orvosi-api/entity"
+	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
 	"github.com/stretchr/testify/assert"
 )
 

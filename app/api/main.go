@@ -8,12 +8,12 @@ import (
 	"time"
 
 	"github.com/indrasaputra/hashids"
+	"github.com/indrasaputra/orvosi-api/internal/builder"
+	"github.com/indrasaputra/orvosi-api/internal/config"
+	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
+	"github.com/indrasaputra/orvosi-api/internal/http/server"
+	"github.com/indrasaputra/orvosi-api/internal/tool"
 	_ "github.com/lib/pq"
-	"github.com/orvosi/api/internal/builder"
-	"github.com/orvosi/api/internal/config"
-	"github.com/orvosi/api/internal/http/middleware"
-	"github.com/orvosi/api/internal/http/server"
-	"github.com/orvosi/api/internal/tool"
 )
 
 const (
