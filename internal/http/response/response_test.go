@@ -3,7 +3,7 @@ package response_test
 import (
 	"testing"
 
-	"github.com/orvosi/api/internal/http/response"
+	"github.com/indrasaputra/orvosi-api/internal/http/response"
 	"github.com/stretchr/testify/assert"
 )
 

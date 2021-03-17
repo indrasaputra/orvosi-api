@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/indrasaputra/hashids"
-	"github.com/orvosi/api/entity"
+	"github.com/indrasaputra/orvosi-api/entity"
 )
 
 // MedicalRecordInserter connects the database with medical record entity

@@ -9,7 +9,7 @@ import (
 	reflect "reflect"
 
 	gomock "github.com/golang/mock/gomock"
-	entity "github.com/orvosi/api/entity"
+	entity "github.com/indrasaputra/orvosi-api/entity"
 )
 
 // MockUpdateMedicalRecordRepository is a mock of UpdateMedicalRecordRepository interface

@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"time"
 
-	"github.com/orvosi/api/entity"
+	"github.com/indrasaputra/orvosi-api/entity"
 )
 
 // MedicalRecordUpdater connects the database with medical record entity

@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/golang/mock/gomock"
-	"github.com/orvosi/api/internal/http/handler"
-	"github.com/orvosi/api/internal/http/router"
-	mock_usecase "github.com/orvosi/api/test/mock/usecase"
+	"github.com/indrasaputra/orvosi-api/internal/http/handler"
+	"github.com/indrasaputra/orvosi-api/internal/http/router"
+	mock_usecase "github.com/indrasaputra/orvosi-api/test/mock/usecase"
 	"github.com/stretchr/testify/assert"
 )
 

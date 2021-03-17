@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"log"
 
-	"github.com/orvosi/api/entity"
+	"github.com/indrasaputra/orvosi-api/entity"
 )
 
 // MedicalRecordSelector connects the database with medical record entity

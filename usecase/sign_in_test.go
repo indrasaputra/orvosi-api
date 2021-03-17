@@ -6,9 +6,9 @@ import (
 
 	"github.com/golang/mock/gomock"
 	"github.com/indrasaputra/hashids"
-	"github.com/orvosi/api/entity"
-	mock_usecase "github.com/orvosi/api/test/mock/usecase"
-	"github.com/orvosi/api/usecase"
+	"github.com/indrasaputra/orvosi-api/entity"
+	mock_usecase "github.com/indrasaputra/orvosi-api/test/mock/usecase"
+	"github.com/indrasaputra/orvosi-api/usecase"
 	"github.com/stretchr/testify/assert"
 )
 

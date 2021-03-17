@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo/v4"
-	"github.com/orvosi/api/internal/http/handler"
-	"github.com/orvosi/api/internal/http/middleware"
+	"github.com/indrasaputra/orvosi-api/internal/http/handler"
+	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
 )
 
 // MedicalRecordCreator creates routes for medical record creator.

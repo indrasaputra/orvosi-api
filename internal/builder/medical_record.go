@@ -3,11 +3,11 @@ package builder
 import (
 	"database/sql"
 
-	"github.com/orvosi/api/internal/config"
-	"github.com/orvosi/api/internal/http/handler"
-	"github.com/orvosi/api/internal/http/router"
-	"github.com/orvosi/api/internal/repository"
-	"github.com/orvosi/api/usecase"
+	"github.com/indrasaputra/orvosi-api/internal/config"
+	"github.com/indrasaputra/orvosi-api/internal/http/handler"
+	"github.com/indrasaputra/orvosi-api/internal/http/router"
+	"github.com/indrasaputra/orvosi-api/internal/repository"
+	"github.com/indrasaputra/orvosi-api/usecase"
 )
 
 // BuildMedicalRecordCreator builds medical record creation workflow

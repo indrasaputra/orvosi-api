@@ -3,7 +3,7 @@ package config_test
 import (
 	"testing"
 
-	"github.com/orvosi/api/internal/config"
+	"github.com/indrasaputra/orvosi-api/internal/config"
 	"github.com/stretchr/testify/assert"
 )
 

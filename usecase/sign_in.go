@@ -3,7 +3,7 @@ package usecase
 import (
 	"context"
 
-	"github.com/orvosi/api/entity"
+	"github.com/indrasaputra/orvosi-api/entity"
 )
 
 // SignIn defines the business logic to sign in.

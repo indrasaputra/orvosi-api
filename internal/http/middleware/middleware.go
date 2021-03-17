@@ -6,8 +6,8 @@ import (
 	"strings"
 
 	"github.com/labstack/echo/v4"
-	"github.com/orvosi/api/entity"
-	"github.com/orvosi/api/internal/http/response"
+	"github.com/indrasaputra/orvosi-api/entity"
+	"github.com/indrasaputra/orvosi-api/internal/http/response"
 )
 
 // ContextKey is just an alias for string to be used

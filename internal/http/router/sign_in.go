@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/orvosi/api/internal/http/handler"
+	"github.com/indrasaputra/orvosi-api/internal/http/handler"
 )
 
 // Signer creates routes for sign in.

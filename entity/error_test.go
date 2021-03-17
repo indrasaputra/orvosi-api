@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/orvosi/api/entity"
+	"github.com/indrasaputra/orvosi-api/entity"
 	"github.com/stretchr/testify/assert"
 )
 

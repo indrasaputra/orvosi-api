@@ -3,8 +3,8 @@ package tool_test
 import (
 	"testing"
 
-	"github.com/orvosi/api/entity"
-	"github.com/orvosi/api/internal/tool"
+	"github.com/indrasaputra/orvosi-api/entity"
+	"github.com/indrasaputra/orvosi-api/internal/tool"
 	"github.com/stretchr/testify/assert"
 )
 
