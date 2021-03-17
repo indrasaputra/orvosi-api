@@ -10,11 +10,11 @@ import (
 
 	"github.com/golang/mock/gomock"
 	"github.com/indrasaputra/hashids"
-	"github.com/labstack/echo/v4"
 	"github.com/indrasaputra/orvosi-api/entity"
 	"github.com/indrasaputra/orvosi-api/internal/http/handler"
 	"github.com/indrasaputra/orvosi-api/internal/http/middleware"
 	mock_usecase "github.com/indrasaputra/orvosi-api/test/mock/usecase"
+	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -249,7 +249,7 @@ func TestMedicalRecordFinder_FindByEmail(t *testing.T) {
 
 func createMedicalRecords() []*entity.MedicalRecord {
 	return []*entity.MedicalRecord{
-		&entity.MedicalRecord{
+		{
 			ID: hashids.ID(1),
 			User: &entity.User{
 				ID:       hashids.ID(1),
