@@ -2,8 +2,8 @@
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/indrasaputra/orvosi-api)](https://goreportcard.com/report/github.com/indrasaputra/orvosi-api)
 [![Workflow](https://github.com/indrasaputra/orvosi-api/workflows/Test/badge.svg)](https://github.com/indrasaputra/orvosi-api/actions)
-[![codecov](https://codecov.io/gh/orvosi/api/branch/master/graph/badge.svg?token=WA9A65NFR9)](https://codecov.io/gh/orvosi/api)
-[![Maintainability](https://api.codeclimate.com/v1/badges/3fa0f93762298b7ae7bc/maintainability)](https://codeclimate.com/github/orvosi/api/maintainability)
+[![codecov](https://codecov.io/gh/indrasaputra/orvosi-api/branch/main/graph/badge.svg?token=HM45WCWOLW)](https://codecov.io/gh/indrasaputra/orvosi-api)
+[![Maintainability](https://api.codeclimate.com/v1/badges/2bf28f86e8cecde2563c/maintainability)](https://codeclimate.com/github/indrasaputra/orvosi-api/maintainability)
 [![Go Reference](https://pkg.go.dev/badge/github.com/indrasaputra/orvosi-api.svg)](https://pkg.go.dev/github.com/indrasaputra/orvosi-api)
 
 ## Description
