@@ -36,7 +36,7 @@ Then, I decided to move this repository to my personal github.
 
 - Install Go
 
-    We use version 1.15. Follow [Golang installation guideline](https://golang.org/doc/install).
+    We use version 1.16. Follow [Golang installation guideline](https://golang.org/doc/install).
 
 - Install PostgreSQL
 
