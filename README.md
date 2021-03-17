@@ -114,15 +114,15 @@ API provides HTTP REST API for Orvosi application.
 
 ## Request Flows
 
-See [Request Flows](https://github.com/indrasaputra/orvosi-api/blob/master/doc/REQUEST-FLOWS.md)
+See [Request Flows](https://github.com/indrasaputra/orvosi-api/blob/main/doc/REQUEST-FLOWS.md)
 
 ## Endpoints
 
-See [Endpoints](https://github.com/indrasaputra/orvosi-api/blob/master/doc/ENDPOINTS.md)
+See [Endpoints](https://github.com/indrasaputra/orvosi-api/blob/main/doc/ENDPOINTS.md)
 
 ## Code Map
 
-See [Code Map](https://github.com/indrasaputra/orvosi-api/blob/master/doc/CODE-MAP.md)
+See [Code Map](https://github.com/indrasaputra/orvosi-api/blob/main/doc/CODE-MAP.md)
 
 ## Dependencies
 
