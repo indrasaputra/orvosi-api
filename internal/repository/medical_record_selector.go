@@ -52,5 +52,8 @@ func (ms *MedicalRecordSelector) FindByEmail(ctx context.Context, email string, 
 
 		result = append(result, &tmp)
 	}
+	if rows.Err() != nil {
+		return []*entity.MedicalRecord{}, entity.WrapError(entity.ErrInternalServer, rows.Err().Error())
+	}
 	return result, nil
 }

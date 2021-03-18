@@ -46,7 +46,7 @@ linters-settings:
     lines: 70
     statements: 40
   lll:
-    line-length: 170
+    line-length: 200
   govet:
     check-shadowing: true
   errcheck:
