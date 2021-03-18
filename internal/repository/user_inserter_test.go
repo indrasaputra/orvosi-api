@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type UserInserter_Executor struct {
+type UserInserterExecutor struct {
 	repo *repository.UserInserter
 	sql  sqlmock.Sqlmock
 }
@@ -70,14 +70,14 @@ func createValidUser() *entity.User {
 	}
 }
 
-func createUserInserterExecutor() *UserInserter_Executor {
+func createUserInserterExecutor() *UserInserterExecutor {
 	db, mock, err := sqlmock.New()
 	if err != nil {
 		log.Panicf("error opening a stub database connection: %v\n", err)
 	}
 
 	repo := repository.NewUserInserter(db)
-	return &UserInserter_Executor{
+	return &UserInserterExecutor{
 		repo: repo,
 		sql:  mock,
 	}

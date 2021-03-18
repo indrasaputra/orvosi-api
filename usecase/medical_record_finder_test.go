@@ -11,7 +11,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type MedicalRecordFinder_Executor struct {
+type MedicalRecordFinderExecutor struct {
 	usecase *usecase.MedicalRecordFinder
 	repo    *mock_usecase.MockFindMedicalRecordRepository
 }
@@ -120,11 +120,11 @@ func TestMedicalRecordFinder_FindByEmail(t *testing.T) {
 	})
 }
 
-func createMedicalRecordFinderExecutor(ctrl *gomock.Controller) *MedicalRecordFinder_Executor {
+func createMedicalRecordFinderExecutor(ctrl *gomock.Controller) *MedicalRecordFinderExecutor {
 	r := mock_usecase.NewMockFindMedicalRecordRepository(ctrl)
 	u := usecase.NewMedicalRecordFinder(r)
 
-	return &MedicalRecordFinder_Executor{
+	return &MedicalRecordFinderExecutor{
 		usecase: u,
 		repo:    r,
 	}

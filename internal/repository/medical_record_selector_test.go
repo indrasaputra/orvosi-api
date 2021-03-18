@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type MedicalRecordSelector_Executor struct {
+type MedicalRecordSelectorExecutor struct {
 	repo *repository.MedicalRecordSelector
 	sql  sqlmock.Sqlmock
 }
@@ -137,14 +137,14 @@ func TestMedicalRecordSelector_FindByEmail(t *testing.T) {
 	})
 }
 
-func createMedicalRecordSelectorExecutor() *MedicalRecordSelector_Executor {
+func createMedicalRecordSelectorExecutor() *MedicalRecordSelectorExecutor {
 	db, mock, err := sqlmock.New()
 	if err != nil {
 		log.Panicf("[createMedicalRecordSelectorExecutor] error opening a stub database connection: %v\n", err)
 	}
 
 	repo := repository.NewMedicalRecordSelector(db)
-	return &MedicalRecordSelector_Executor{
+	return &MedicalRecordSelectorExecutor{
 		repo: repo,
 		sql:  mock,
 	}

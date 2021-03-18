@@ -16,7 +16,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type Signer_Executor struct {
+type SignerExecutor struct {
 	handler *handler.Signer
 	usecase *mock_usecase.MockSignIn
 }
@@ -105,10 +105,10 @@ func TestSigner_SignIn(t *testing.T) {
 	})
 }
 
-func createSignerExecutor(ctrl *gomock.Controller) *Signer_Executor {
+func createSignerExecutor(ctrl *gomock.Controller) *SignerExecutor {
 	u := mock_usecase.NewMockSignIn(ctrl)
 	h := handler.NewSigner(u)
-	return &Signer_Executor{
+	return &SignerExecutor{
 		handler: h,
 		usecase: u,
 	}

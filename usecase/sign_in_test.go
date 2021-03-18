@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type SignIn_Executor struct {
+type SignInExecutor struct {
 	usecase *usecase.Signer
 	repo    *mock_usecase.MockInsertUserRepository
 }
@@ -73,11 +73,11 @@ func createValidUser() *entity.User {
 	}
 }
 
-func createSignInExecutor(ctrl *gomock.Controller) *SignIn_Executor {
+func createSignInExecutor(ctrl *gomock.Controller) *SignInExecutor {
 	r := mock_usecase.NewMockInsertUserRepository(ctrl)
 	u := usecase.NewSigner(r)
 
-	return &SignIn_Executor{
+	return &SignInExecutor{
 		usecase: u,
 		repo:    r,
 	}
