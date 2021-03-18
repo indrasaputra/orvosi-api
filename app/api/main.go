@@ -54,7 +54,7 @@ func runServer(srv *server.Server, port string) {
 }
 
 func waitForShutdown(srv *server.Server) {
-	quit := make(chan os.Signal)
+	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, os.Interrupt)
 
 	<-quit
