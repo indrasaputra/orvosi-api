@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type MedicalRecordUpdater_Executor struct {
+type MedicalRecordUpdaterExecutor struct {
 	repo *repository.MedicalRecordUpdater
 	sql  sqlmock.Sqlmock
 }
@@ -87,14 +87,14 @@ func TestMedicalRecordUpdater_Update(t *testing.T) {
 	})
 }
 
-func createMedicalRecordUpdaterExecutor() *MedicalRecordUpdater_Executor {
+func createMedicalRecordUpdaterExecutor() *MedicalRecordUpdaterExecutor {
 	db, mock, err := sqlmock.New()
 	if err != nil {
 		log.Panicf("error opening a stub database connection: %v\n", err)
 	}
 
 	repo := repository.NewMedicalRecordUpdater(db)
-	return &MedicalRecordUpdater_Executor{
+	return &MedicalRecordUpdaterExecutor{
 		repo: repo,
 		sql:  mock,
 	}

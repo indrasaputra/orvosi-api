@@ -12,7 +12,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-type MedicalRecordCreator_Executor struct {
+type MedicalRecordCreatorExecutor struct {
 	usecase *usecase.MedicalRecordCreator
 	repo    *mock_usecase.MockInsertMedicalRecordRepository
 }
@@ -124,11 +124,11 @@ func createValidMedicalRecord() *entity.MedicalRecord {
 	}
 }
 
-func createMedicalRecordCreatorExecutor(ctrl *gomock.Controller) *MedicalRecordCreator_Executor {
+func createMedicalRecordCreatorExecutor(ctrl *gomock.Controller) *MedicalRecordCreatorExecutor {
 	r := mock_usecase.NewMockInsertMedicalRecordRepository(ctrl)
 	u := usecase.NewMedicalRecordCreator(r)
 
-	return &MedicalRecordCreator_Executor{
+	return &MedicalRecordCreatorExecutor{
 		usecase: u,
 		repo:    r,
 	}
