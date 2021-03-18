@@ -29,13 +29,8 @@ func NewSuccess(data, meta interface{}) *Success {
 
 // NewError creates an instance of Error response.
 func NewError(errors ...error) *Error {
-	var res []error
-	for _, err := range errors {
-		res = append(res, err)
-	}
-
 	return &Error{
-		Errors: res,
+		Errors: errors,
 		Meta:   nil,
 	}
 }

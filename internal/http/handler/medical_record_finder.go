@@ -125,9 +125,9 @@ func extractQueryParam(param string) (uint64, *entity.Error) {
 }
 
 func createMedicalRecordResponses(mrs []*entity.MedicalRecord) []*MedicalRecordResponse {
-	var res []*MedicalRecordResponse
-	for _, mr := range mrs {
-		res = append(res, createMedicalRecordResponse(mr))
+	res := make([]*MedicalRecordResponse, len(mrs))
+	for i, mr := range mrs {
+		res[i] = createMedicalRecordResponse(mr)
 	}
 	return res
 }
