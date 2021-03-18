@@ -17,7 +17,8 @@ import (
 )
 
 const (
-	dbDriver = "postgres"
+	dbDriver           = "postgres"
+	contextTimeoutTime = 5 * time.Second
 )
 
 func main() {
@@ -58,7 +59,7 @@ func waitForShutdown(srv *server.Server) {
 
 	<-quit
 
-	ctx, cancel := context.WithTimeout(context.Background(), 5*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), contextTimeoutTime)
 	defer cancel()
 	if err := srv.Shutdown(ctx); err != nil {
 		srv.Logger.Fatal(err)
