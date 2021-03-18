@@ -77,9 +77,9 @@ func TestNewError(t *testing.T) {
 }
 
 func buildListOfError(errs []*Error) []error {
-	var res []error
-	for _, err := range errs {
-		res = append(res, err)
+	res := make([]error, len(errs))
+	for i, err := range errs {
+		res[i] = err
 	}
 	return res
 }
