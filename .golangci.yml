@@ -58,6 +58,4 @@ issues:
       linters:
         - lll
         - funlen
-        - golint
-        - stylecheck
         - dupl
