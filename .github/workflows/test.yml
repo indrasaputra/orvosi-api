@@ -3,7 +3,7 @@ name: Test
 on: [push, pull_request]
 
 jobs:
-  golangci:
+  code-lint:
     name: lint using golangci
     if: github.event_name == 'push'
     runs-on: ubuntu-latest

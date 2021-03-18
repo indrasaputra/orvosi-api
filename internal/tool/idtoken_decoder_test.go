@@ -1,6 +1,7 @@
 package tool_test
 
 import (
+	"io/ioutil"
 	"testing"
 
 	"github.com/indrasaputra/orvosi-api/entity"
@@ -10,7 +11,6 @@ import (
 
 const (
 	audience = "test-audience"
-	token    = "eyJhbGciOiJIUzI1NiIsImtpZCI6ImVlYTFiMWY0MjgwN2E4Y2MxMzZhMDNhM2MxNmQyOWRiODI5NmRhZjAiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoidGVzdC1hdWRpZW5jZSIsImF1ZCI6InRlc3QtYXVkaWVuY2UiLCJzdWIiOiIxMjM0NTY3ODkwIiwiaGQiOiJkdW1teS5jb20iLCJlbWFpbCI6ImR1bW15QGR1bW15LmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoia216d2E4YXdhYSIsIm5hbWUiOiJEdW1teSBBY2NvdW50IiwicGljdHVyZSI6Imh0dHBzOi8vZHVtbXkuY29tL3Bob3RvLmpwZyIsImdpdmVuX25hbWUiOiJEdW1teSIsImZhbWlseV9uYW1lIjoiQWNjb3VudCIsImxvY2FsZSI6ImVuIiwiaWF0IjoyNjExNjQzMjAzLCJleHAiOjI2MTE2NDY4MDMsImp0aSI6InNvbWVyYW5kb21hbHBoYW51bWVyaWsxMjM0NTY3ODkwIn0.raVMs-JvbG4h2lP5p8RfPC5YAyBDe4nCBCiGXGWE88g"
 )
 
 func TestNewIDTokenDecoder(t *testing.T) {
@@ -22,8 +22,11 @@ func TestNewIDTokenDecoder(t *testing.T) {
 
 func TestIDTokenDecoder_Decode(t *testing.T) {
 	t.Run("fail to decode invalid google id token", func(t *testing.T) {
+		token, ierr := ioutil.ReadFile("../../test/fixture/token.txt")
+		assert.Nil(t, ierr)
+
 		dec := tool.NewIDTokenDecoder(audience)
-		user, err := dec.Decode(token)
+		user, err := dec.Decode(string(token))
 
 		assert.NotNil(t, err)
 		assert.Equal(t, entity.ErrInvalidGoogleToken.Code, err.Code)
