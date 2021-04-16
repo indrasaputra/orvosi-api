@@ -27,5 +27,3 @@ jobs:
       - run: go test -race ./... -coverprofile=coverage.out -covermode=atomic
       - name: Codecov
         uses: codecov/codecov-action@v1.0.13
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
